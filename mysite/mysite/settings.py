@@ -33,12 +33,14 @@ else:
 if IS_DEPLOYED:
     DEBUG = False
 else:
+    from dotenv import load_dotenv
+    load_dotenv()
     if os.getenv("DEBUG") == "True":
         DEBUG = True
     else:
         DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
