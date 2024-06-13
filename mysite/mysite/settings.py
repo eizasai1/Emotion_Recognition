@@ -40,7 +40,7 @@ else:
     else:
         DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1", 'summer-project-d4fk.onrender.com']
 
 
 # Application definition
